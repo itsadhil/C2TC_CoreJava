@@ -10,10 +10,18 @@ public class Customer {
 		this.city = "Chennai";
 	}
 	public Customer(int cid, String cname, String city) {
+		this("Unknown","Puducherry");
 		this.cid = cid;
 		this.cname = cname;
 		this.city = city;
 	}
+	public Customer(String cname, String city) {
+		//this.cid = cid;
+		this.cname = cname;
+		this.city = city;
+		System.out.println("The 2 Param constructor has been called");
+	}
+	
 	public int getCid() {
 		return cid;
 	}
